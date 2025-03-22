@@ -43,9 +43,9 @@ body {
   width: 726px;
   padding: $padding;
 
-  @each $day, $index in $days {
+  @each $day, $days-in-week in $days {
     &--start-day-#{$day} > :first-child {
-      margin-left: (($day-size * $index) + $index);
+      margin-left: (($day-size * $days-in-week) + $days-in-week);
     }
   }
 
